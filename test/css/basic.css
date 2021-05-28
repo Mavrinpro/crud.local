@@ -1,0 +1,98 @@
+.dropzone, .dropzone * {
+  box-sizing: border-box; }
+
+.dropzone {
+  position: relative; }
+  .dropzone .dz-preview {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    margin: 0.5em; }
+    .dropzone .dz-preview .dz-progress {
+      display: block;
+      height: 15px;
+      border: 1px solid #aaa; }
+      .dropzone .dz-preview .dz-progress .dz-upload {
+        display: block;
+        height: 100%;
+        width: 0;
+        background: green; }
+    .dropzone .dz-preview .dz-error-message {
+      color: red;
+      display: none; }
+    .dropzone .dz-preview.dz-error .dz-error-message, .dropzone .dz-preview.dz-error .dz-error-mark {
+      display: block; }
+    .dropzone .dz-preview.dz-success .dz-success-mark {
+      display: block; }
+    .dropzone .dz-preview .dz-error-mark, .dropzone .dz-preview .dz-success-mark {
+      position: absolute;
+      display: none;
+      left: 30px;
+      top: 30px;
+      width: 54px;
+      height: 58px;
+      left: 50%;
+      margin-left: -27px; }
+
+
+.flexbin {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: -2.5px; }
+  .flexbin:after {
+    content: '';
+    flex-grow: 999999999;
+    min-width: 300px;
+    height: 0; }
+  .flexbin > * {
+    position: relative;
+    display: block;
+    height: 200px;
+    margin: 2.5px;
+    flex-grow: 1; }
+    .flexbin > * > img {
+      height: 300px;
+      max-width: 100%;
+      min-width: 100%;
+      vertical-align: bottom; }
+  .flexbin.flexbin-margin {
+    margin: 2.5px; }
+  @media (max-width: 860px) {
+    .flexbin {
+      display: flex;
+      overflow: hidden;
+      flex-wrap: wrap;
+      margin: -2.5px; }
+      .flexbin:after {
+        content: '';
+        flex-grow: 999999999;
+        min-width: 150px;
+        height: 0; }
+      .flexbin > * {
+        position: relative;
+        display: block;
+        height: 150px;
+        margin: 2.5px;
+        flex-grow: 1; }
+        .flexbin > * > img {
+          height: 150px;
+          max-width: 100%;
+          min-width: 100%;
+          vertical-align: bottom; }
+      .flexbin.flexbin-margin {
+        margin: 2.5px; } }
+  @media (max-width: 498px) {
+    
+       
+.flexbin > * {
+    position: relative;
+    display: block;
+    height: auto;
+    margin: 2.5px;
+    flex-grow: 1;
+    width: -webkit-fill-available;
+}
+  .flexbin.flexbin-margin {
+    margin: 2.5px; } 
+  }
